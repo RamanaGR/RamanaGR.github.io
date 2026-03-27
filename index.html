@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ramana | AI Architect</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=JetBrains+Mono&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <style>
+        :root { --neon-cyan: #00f2ff; --neon-purple: #bc13fe; }
+        body { background: #000; color: #fff; font-family: 'Inter', sans-serif; overflow-x: hidden; }
+        #canvas-container { position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; }
+        
+        .nexus-card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(0, 242, 255, 0.1);
+            backdrop-filter: blur(12px);
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+        .nexus-card:hover {
+            border-color: var(--neon-cyan);
+            box-shadow: 0 0 30px rgba(0, 242, 255, 0.2);
+            transform: translateY(-8px) scale(1.02);
+        }
+        .glow-text { text-shadow: 0 0 10px rgba(0, 242, 255, 0.5); }
+        .gradient-border { border: 1px solid; border-image: linear-gradient(to right, var(--neon-cyan), var(--neon-purple)) 1; }
+        
+        /* Custom scrollbar */
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: #000; }
+        ::-webkit-scrollbar-thumb { background: var(--neon-cyan); border-radius: 10px; }
+    </style>
+</head>
+<body>
+
+    <div id="canvas-container">
+        <canvas id="neural-canvas"></canvas>
+    </div>
+
+    <section class="relative min-h-screen flex flex-col justify-center items-center px-6 text-center">
+        <div data-aos="zoom-in">
+            <h1 class="text-6xl md:text-8xl font-extrabold mb-4 tracking-tighter">
+                RAMANA<span class="text-[#00f2ff]">.</span>
+            </h1>
+            <div id="typewriter" class="text-xl md:text-3xl font-mono text-gray-400 glow-text h-10 mb-8"></div>
+        </div>
+        
+        <p class="max-w-2xl text-gray-400 text-lg md:text-xl leading-relaxed mb-10" data-aos="fade-up" data-aos-delay="200">
+            Architecting <span class="text-white">Graph-Augmented Intelligence</span> and <span class="text-white">Stateful Agent Swarms</span> to solve the last mile of enterprise AI reliability.
+        </p>
+
+        <div class="flex gap-6" data-aos="fade-up" data-aos-delay="400">
+            <a href="https://www.linkedin.com/in/ramana-gangarao/" class="px-8 py-3 rounded-sm border border-[#00f2ff] text-[#00f2ff] font-bold uppercase tracking-widest hover:bg-[#00f2ff] hover:text-black transition-all">LinkedIn</a>
+            <a href="https://github.com/RamanaGR" class="px-8 py-3 rounded-sm border border-white text-white font-bold uppercase tracking-widest hover:bg-white hover:text-black transition-all">GitHub</a>
+        </div>
+    </section>
+
+    <section class="max-w-6xl mx-auto py-24 px-6">
+        <h2 class="text-4xl font-bold mb-16 flex items-center gap-4" data-aos="fade-right">
+            <span class="text-[#00f2ff]">01.</span> Career Trajectory
+        </h2>
+
+        <div class="grid grid-cols-1 gap-8">
+            <div class="nexus-card p-8 rounded-lg relative overflow-hidden" data-aos="fade-up">
+                <div class="absolute top-0 right-0 p-4 opacity-10">
+                    <img src="https://img.icons8.com/ios-filled/100/ffffff/brain-link.png" class="w-20"/>
+                </div>
+                <div class="flex flex-col md:flex-row justify-between items-start md:items-center">
+                    <div>
+                        <h3 class="text-2xl font-bold text-[#E87722]">Optum</h3>
+                        <p class="text-[#00f2ff] font-mono tracking-tighter">AI ENGINEER (CONTRACT)</p>
+                    </div>
+                    <span class="mt-4 md:mt-0 px-4 py-1 border border-[#E87722] text-[#E87722] text-xs font-bold uppercase">RAG & Doc Intelligence</span>
+                </div>
+                <p class="mt-6 text-gray-400 max-w-3xl">Optimizing high-precision RAG pipelines using hybrid vector-graph search (Milvus + Neo4j) to achieve 95% accuracy in complex entity extraction.</p>
+            </div>
+
+            <div class="nexus-card p-8 rounded-lg relative overflow-hidden" data-aos="fade-up">
+                <div class="flex flex-col md:flex-row justify-between items-start md:items-center">
+                    <div>
+                        <h3 class="text-2xl font-bold text-[#0078D4]">Innovapath INC</h3>
+                        <p class="text-[#00f2ff] font-mono tracking-tighter">AI ENGINEER</p>
+                    </div>
+                    <span class="mt-4 md:mt-0 px-4 py-1 border border-[#0078D4] text-[#0078D4] text-xs font-bold uppercase">LangGraph / Agentic AI</span>
+                </div>
+                <p class="mt-6 text-gray-400 max-w-3xl">Architected enterprise-grade agent swarms using Google ADK and LangGraph for end-to-end workforce automation.</p>
+            </div>
+
+            <div class="nexus-card p-8 rounded-lg relative overflow-hidden" data-aos="fade-up">
+                <div class="flex flex-col md:flex-row justify-between items-start md:items-center">
+                    <div>
+                        <h3 class="text-2xl font-bold text-white">Wipro</h3>
+                        <p class="text-[#00f2ff] font-mono tracking-tighter">DEVELOPER ANALYST I / MLOPS</p>
+                    </div>
+                    <span class="mt-4 md:mt-0 px-4 py-1 border border-white/40 text-white/40 text-xs font-bold uppercase">Production ML Pipelines</span>
+                </div>
+                <p class="mt-6 text-gray-400 max-w-3xl">Built scalable MLOps frameworks to manage lifecycle of production models and high-throughput data pipelines.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="max-w-6xl mx-auto py-24 px-6">
+        <h2 class="text-4xl font-bold mb-16 flex items-center gap-4" data-aos="fade-right">
+            <span class="text-[#00f2ff]">02.</span> Neural Repositories
+        </h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <a href="https://github.com/RamanaGR/knowledge-graph-rag" class="nexus-card p-8 rounded-lg group">
+                <h4 class="text-xl font-bold mb-4 group-hover:text-[#00f2ff] transition">Knowledge Graph RAG</h4>
+                <p class="text-gray-400 text-sm mb-6">Structural reasoning over unstructured data using Neo4j and LangChain.</p>
+                <div class="flex gap-3">
+                    <span class="text-[10px] font-mono border border-gray-700 px-2 py-1">NEO4J</span>
+                    <span class="text-[10px] font-mono border border-gray-700 px-2 py-1">PYTHON</span>
+                </div>
+            </a>
+
+            <a href="https://github.com/RamanaGR/langgraph-agent-engineering" class="nexus-card p-8 rounded-lg group">
+                <h4 class="text-xl font-bold mb-4 group-hover:text-[#00f2ff] transition">LangGraph Engineering</h4>
+                <p class="text-gray-400 text-sm mb-6">Multi-agent orchestration with cyclic state management and self-correction loops.</p>
+                <div class="flex gap-3">
+                    <span class="text-[10px] font-mono border border-gray-700 px-2 py-1">LANGGRAPH</span>
+                    <span class="text-[10px] font-mono border border-gray-700 px-2 py-1">AGENTIC</span>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <footer class="text-center py-20 border-t border-white/5 opacity-40 text-xs tracking-widest uppercase">
+        System Active: 2026 // Distributed via Ramana-Nexus
+    </footer>
+
+    <script>
+        const canvas = document.getElementById('neural-canvas');
+        const ctx = canvas.getContext('2d');
+        let particles = [];
+
+        function init() {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+            particles = [];
+            for (let i = 0; i < 80; i++) {
+                particles.push({
+                    x: Math.random() * canvas.width,
+                    y: Math.random() * canvas.height,
+                    vx: (Math.random() - 0.5) * 0.5,
+                    vy: (Math.random() - 0.5) * 0.5
+                });
+            }
+        }
+
+        function draw() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            ctx.fillStyle = 'rgba(0, 242, 255, 0.5)';
+            ctx.strokeStyle = 'rgba(0, 242, 255, 0.05)';
+
+            particles.forEach((p, i) => {
+                p.x += p.vx;
+                p.y += p.vy;
+
+                if (p.x < 0 || p.x > canvas.width) p.vx *= -1;
+                if (p.y < 0 || p.y > canvas.height) p.vy *= -1;
+
+                ctx.beginPath();
+                ctx.arc(p.x, p.y, 1.5, 0, Math.PI * 2);
+                ctx.fill();
+
+                for (let j = i + 1; j < particles.length; j++) {
+                    const p2 = particles[j];
+                    const dist = Math.hypot(p.x - p2.x, p.y - p2.y);
+                    if (dist < 150) {
+                        ctx.lineWidth = 1 - dist/150;
+                        ctx.beginPath();
+                        ctx.moveTo(p.x, p.y);
+                        ctx.lineTo(p2.x, p2.y);
+                        ctx.stroke();
+                    }
+                }
+            });
+            requestAnimationFrame(draw);
+        }
+
+        window.addEventListener('resize', init);
+        init();
+        draw();
+
+        // Initialize AOS and Typewriter
+        AOS.init({ duration: 1000, once: true });
+        new Typewriter('#typewriter', {
+            strings: ['AI ARCHITECT', 'RAG SPECIALIST', 'AGENTIC SYSTEMS ENGINEER'],
+            autoStart: true,
+            loop: true,
+        });
+    </script>
+</body>
+</html>
