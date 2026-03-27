@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ramana | AI Solutions Architect</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;400;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <style>
+        body { 
+            background: #050505; 
+            color: #fff; 
+            font-family: 'Outfit', sans-serif; 
+            overflow-x: hidden;
+        }
+        /* Animated Background Gradient */
+        .liquid-bg {
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: radial-gradient(circle at 50% 50%, #1a1a2e 0%, #050505 100%);
+            z-index: -2;
+        }
+        .gradient-sphere {
+            position: fixed;
+            width: 600px; height: 600px;
+            background: radial-gradient(circle, rgba(99, 102, 241, 0.15) 0%, transparent 70%);
+            filter: blur(80px);
+            z-index: -1;
+            animation: flow 20s infinite alternate;
+        }
+        @keyframes flow {
+            0% { transform: translate(-20%, -20%); }
+            100% { transform: translate(40%, 40%); }
+        }
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.02);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+        }
+        .glass-panel:hover {
+            background: rgba(255, 255, 255, 0.05);
+            border-color: rgba(99, 102, 241, 0.3);
+        }
+        .title-gradient {
+            background: linear-gradient(to bottom right, #fff 30%, #6366f1 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="liquid-bg"></div>
+    <div class="gradient-sphere"></div>
+
+    <section class="min-h-screen flex flex-col justify-center items-center text-center px-6">
+        <h1 class="text-7xl md:text-9xl font-bold tracking-tight mb-6 title-gradient" data-aos="fade-up">
+            Ramana
+        </h1>
+        <p class="text-xl md:text-2xl text-gray-400 font-light tracking-widest uppercase mb-12" data-aos="fade-up" data-aos-delay="200">
+            AI Engineer <span class="mx-4 text-indigo-500">|</span> Solutions Architect
+        </p>
+        <div class="flex gap-8" data-aos="fade-up" data-aos-delay="400">
+            <a href="https://www.linkedin.com/in/ramana-gangarao/" class="text-sm font-bold tracking-[0.2em] uppercase hover:text-indigo-400 transition">LinkedIn</a>
+            <a href="https://github.com/RamanaGR" class="text-sm font-bold tracking-[0.2em] uppercase hover:text-indigo-400 transition">GitHub</a>
+        </div>
+    </section>
+
+    <section class="max-w-4xl mx-auto py-32 px-6">
+        <div class="space-y-32">
+            
+            <div class="relative" data-aos="fade-right">
+                <span class="text-6xl font-bold opacity-5 absolute -left-12 -top-12">01</span>
+                <h3 class="text-4xl font-bold mb-4">Optum</h3>
+                <p class="text-indigo-400 font-medium mb-6">AI Engineer (Contract)</p>
+                <p class="text-gray-400 text-lg leading-relaxed">
+                    Architecting high-fidelity <span class="text-white">RAG pipelines</span> for enterprise document intelligence. Focused on achieving <span class="text-white">95% entity extraction accuracy</span> through hybrid vector-graph orchestration.
+                </p>
+            </div>
+
+            <div class="relative" data-aos="fade-left">
+                <span class="text-6xl font-bold opacity-5 absolute -right-12 -top-12 text-right w-full">02</span>
+                <h3 class="text-4xl font-bold mb-4">Innovapath INC</h3>
+                <p class="text-indigo-400 font-medium mb-6">AI Engineer</p>
+                <p class="text-gray-400 text-lg leading-relaxed">
+                    Pioneering <span class="text-white">Agentic AI Platforms</span>. Built autonomous multi-agent swarms using LangGraph and Google ADK to redefine workforce operations.
+                </p>
+            </div>
+
+            <div class="relative" data-aos="fade-right">
+                <span class="text-6xl font-bold opacity-5 absolute -left-12 -top-12">03</span>
+                <h3 class="text-4xl font-bold mb-4">Wipro</h3>
+                <p class="text-indigo-400 font-medium mb-6">Developer Analyst I / MLOps</p>
+                <p class="text-gray-400 text-lg leading-relaxed">
+                    Engineered scalable <span class="text-white">Production ML Pipelines</span> and full-stack solutions, laying the foundation for modern MLOps workflows.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="max-w-6xl mx-auto py-32 px-6 grid grid-cols-1 md:grid-cols-2 gap-12">
+        
+        <div class="glass-panel p-12 rounded-3xl" data-aos="zoom-in-up">
+            <h4 class="text-2xl font-bold mb-4">Knowledge Graph RAG</h4>
+            <p class="text-gray-400 mb-8">Structural reasoning over unstructured data using Neo4j and LangChain.</p>
+            <a href="https://github.com/RamanaGR/knowledge-graph-rag" class="text-indigo-400 text-xs font-bold uppercase tracking-widest hover:underline">View Repository ↗</a>
+        </div>
+
+        <div class="glass-panel p-12 rounded-3xl" data-aos="zoom-in-up" data-aos-delay="100">
+            <h4 class="text-2xl font-bold mb-4">LangGraph Agent Engineering</h4>
+            <p class="text-gray-400 mb-8">Autonomous self-correction loops and cyclic state management in AI swarms.</p>
+            <a href="https://github.com/RamanaGR/langgraph-agent-engineering" class="text-indigo-400 text-xs font-bold uppercase tracking-widest hover:underline">View Repository ↗</a>
+        </div>
+
+    </section>
+
+    <footer class="py-32 text-center">
+        <div class="w-12 h-[1px] bg-indigo-500 mx-auto mb-8"></div>
+        <p class="text-gray-600 text-xs tracking-[0.4em] uppercase">Ramana // MMXVI</p>
+    </footer>
+
+    <script>
+        AOS.init({ duration: 1200, once: false });
+    </script>
+</body>
+</html>
