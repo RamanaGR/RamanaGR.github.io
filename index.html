@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ramana | AI Engineering Lead</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <style>
+        body { background: #000; color: #fff; font-family: 'Plus Jakarta Sans', sans-serif; }
+        .bento-card { 
+            background: #0a0a0a; 
+            border: 1px solid #1a1a1a; 
+            transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1); 
+            overflow: hidden;
+        }
+        .bento-card:hover { 
+            background: #111; 
+            border-color: #333; 
+            transform: scale(1.01); 
+        }
+        .accent-gradient { background: linear-gradient(135deg, #fff 0%, #555 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .badge { background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); }
+    </style>
+</head>
+<body class="p-4 md:p-10 lg:p-20">
+
+    <header class="max-w-7xl mx-auto mb-12">
+        <div class="flex flex-col md:flex-row justify-between items-end gap-6">
+            <div data-aos="fade-right">
+                <h1 class="text-6xl md:text-8xl font-extrabold tracking-tight mb-4 accent-gradient">RAMANA</h1>
+                <p class="text-xl md:text-2xl text-gray-400 font-light max-w-xl">
+                    Specializing in <span class="text-white">Enterprise RAG</span> and <span class="text-white">Agentic Orchestration</span>. 
+                    Currently scaling intelligence at Optum.
+                </p>
+            </div>
+            <div class="flex gap-4" data-aos="fade-left">
+                <a href="https://www.linkedin.com/in/ramana-gangarao/" class="badge px-6 py-3 rounded-full hover:bg-white hover:text-black transition-all font-semibold">LinkedIn</a>
+                <a href="https://github.com/RamanaGR" class="badge px-6 py-3 rounded-full hover:bg-white hover:text-black transition-all font-semibold">GitHub</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
+        
+        <div class="bento-card md:col-span-2 p-10 rounded-[2.5rem] flex flex-col justify-between min-h-[400px]" data-aos="zoom-in-up">
+            <div>
+                <span class="text-orange-500 font-bold tracking-widest text-xs uppercase mb-4 block">Current Role</span>
+                <h2 class="text-4xl font-bold mb-4">AI Engineer @ Optum</h2>
+                <p class="text-gray-400 text-lg leading-relaxed max-w-lg">
+                    Architecting high-precision RAG pipelines. Achieved <span class="text-white">95% entity extraction accuracy</span> using hybrid Vector-Graph search (Milvus & Neo4j).
+                </p>
+            </div>
+            <div class="flex gap-3 mt-8">
+                <span class="badge px-4 py-2 rounded-xl text-xs">Neo4j</span>
+                <span class="badge px-4 py-2 rounded-xl text-xs">Milvus</span>
+                <span class="badge px-4 py-2 rounded-xl text-xs">RAG</span>
+            </div>
+        </div>
+
+        <div class="bento-card p-10 rounded-[2.5rem] flex flex-col justify-between" data-aos="zoom-in-up" data-aos-delay="100">
+            <div>
+                <span class="text-blue-500 font-bold tracking-widest text-xs uppercase mb-4 block">Previous</span>
+                <h3 class="text-2xl font-bold mb-2">Innovapath INC</h3>
+                <p class="text-gray-500 text-sm">Engineered multi-agent swarms with <span class="text-white">LangGraph & Google ADK</span>.</p>
+            </div>
+            <div class="mt-12 bg-blue-500/10 border border-blue-500/20 p-4 rounded-2xl text-blue-400 text-center text-sm font-bold">
+                Agentic AI Specialist
+            </div>
+        </div>
+
+        <div class="bento-card p-10 rounded-[2.5rem]" data-aos="zoom-in-up" data-aos-delay="200">
+            <span class="text-green-500 font-bold tracking-widest text-xs uppercase mb-4 block">Background</span>
+            <h3 class="text-2xl font-bold mb-2">Wipro</h3>
+            <p class="text-gray-500 text-sm mb-6">Developer Analyst I / MLOps</p>
+            <div class="h-24 flex items-center justify-center opacity-30">
+                <svg viewBox="0 0 24 24" class="w-16 h-16 fill-current text-white"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+            </div>
+            <p class="text-xs text-center text-gray-600 mt-4">Scalable Production Pipelines</p>
+        </div>
+
+        <div class="bento-card md:col-span-2 p-10 rounded-[2.5rem] group relative" data-aos="zoom-in-up" data-aos-delay="300">
+            <div class="flex justify-between items-start">
+                <div>
+                    <h3 class="text-3xl font-bold mb-2">Knowledge Graph RAG</h3>
+                    <p class="text-gray-400">Structural reasoning for complex LLM tasks.</p>
+                </div>
+                <a href="https://github.com/RamanaGR/knowledge-graph-rag" class="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center group-hover:bg-white group-hover:text-black transition-all">↗</a>
+            </div>
+            <div class="mt-8 flex flex-wrap gap-2">
+                <span class="badge px-4 py-2 rounded-xl text-xs">LangChain</span>
+                <span class="badge px-4 py-2 rounded-xl text-xs">GraphDB</span>
+                <span class="badge px-4 py-2 rounded-xl text-xs">Reasoning</span>
+            </div>
+        </div>
+
+        <div class="bento-card p-10 rounded-[2.5rem]" data-aos="zoom-in-up" data-aos-delay="400">
+            <h3 class="text-xl font-bold mb-2">NL2SQL Agent</h3>
+            <p class="text-gray-500 text-sm mb-4">Natural Language DB Interface.</p>
+            <div class="w-full bg-white/5 h-1 rounded-full overflow-hidden">
+                <div class="bg-white w-2/3 h-full"></div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="max-w-7xl mx-auto py-20 text-center text-gray-700 text-xs tracking-[0.5em] uppercase">
+        Built for Impact // 2026
+    </footer>
+
+    <script>
+        AOS.init({ duration: 1000, once: true });
+    </script>
+</body>
+</html>
