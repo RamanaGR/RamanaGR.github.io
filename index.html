@@ -1,39 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> RAMANA GANGARAO | AI Engineer</title>
+    <title>RAMANA GANGARAO | AI Engineer</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=JetBrains+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=JetBrains+Mono&display=swap"
+        rel="stylesheet">
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    
+
     <style>
-        :root { --neon-cyan: #00f2ff; --neon-purple: #bc13fe; --optum-orange: #E87722; }
-        body { background: #000; color: #fff; font-family: 'Inter', sans-serif; overflow-x: hidden; }
-        #canvas-container { position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; }
-        
+        :root {
+            --neon-cyan: #00f2ff;
+            --neon-purple: #bc13fe;
+            --optum-orange: #E87722;
+        }
+
+        body {
+            background: #000;
+            color: #fff;
+            font-family: 'Inter', sans-serif;
+            overflow-x: hidden;
+        }
+
+        #canvas-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+
         .nexus-card {
             background: rgba(255, 255, 255, 0.02);
             border: 1px solid rgba(0, 242, 255, 0.08);
             backdrop-filter: blur(15px);
             transition: all 0.4s ease;
         }
+
         .nexus-card:hover {
             border-color: var(--neon-cyan);
             background: rgba(0, 242, 255, 0.03);
             box-shadow: 0 0 40px rgba(0, 242, 255, 0.15);
             transform: translateY(-5px);
         }
-        .glow-text { text-shadow: 0 0 15px rgba(0, 242, 255, 0.6); }
-        .skill-tag { border: 1px solid rgba(255,255,255,0.1); background: rgba(255,255,255,0.03); padding: 2px 8px; border-radius: 4px; font-size: 10px; font-family: 'JetBrains Mono'; color: var(--neon-cyan); }
-        
-        ::-webkit-scrollbar { width: 5px; }
-        ::-webkit-scrollbar-thumb { background: var(--neon-cyan); border-radius: 10px; }
+
+        .glow-text {
+            text-shadow: 0 0 15px rgba(0, 242, 255, 0.6);
+        }
+
+        .skill-tag {
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            background: rgba(255, 255, 255, 0.03);
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 10px;
+            font-family: 'JetBrains Mono';
+            color: var(--neon-cyan);
+        }
+
+        ::-webkit-scrollbar {
+            width: 5px;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: var(--neon-cyan);
+            border-radius: 10px;
+        }
     </style>
 </head>
+
 <body>
 
     <div id="canvas-container"><canvas id="neural-canvas"></canvas></div>
@@ -41,19 +81,47 @@
     <section class="min-h-screen flex flex-col justify-center items-center px-6 text-center">
         <div data-aos="zoom-in">
             <h1 class="text-4xl md:text-7xl font-extrabold mb-4 tracking-tighter uppercase">
-                 RAMANA GANGARAO <span class="text-[#00f2ff]">.</span>
+                RAMANA GANGARAO <span class="text-[#00f2ff]">.</span>
             </h1>
             <div id="typewriter" class="text-xl md:text-3xl font-mono text-gray-400 glow-text h-10 mb-8"></div>
         </div>
-        
+
         <p class="max-w-3xl text-gray-400 text-lg md:text-xl leading-relaxed mb-10" data-aos="fade-up">
-            Architecting <span class="text-white">Stateful Agent Swarms</span> and <span class="text-white">Cognitive Document Intelligence</span>. Currently engineering Model Context Protocol (MCP) infrastructures at <span class="text-[#E87722] font-bold uppercase">Optum</span>.
+            Architecting <span class="text-white">Stateful Agent Swarms</span> and <span class="text-white">Cognitive
+                Document Intelligence</span>. Currently engineering Model Context Protocol (MCP) infrastructures at
+            <span class="text-[#E87722] font-bold uppercase">Optum</span>.
         </p>
 
         <div class="flex flex-wrap justify-center gap-4" data-aos="fade-up">
-            <a href="https://www.linkedin.com/in/ramana-gangarao/" class="px-8 py-3 border border-[#00f2ff] text-[#00f2ff] font-bold uppercase tracking-widest hover:bg-[#00f2ff] hover:text-black transition-all">LinkedIn</a>
-            <a href="https://github.com/RamanaGR" class="px-8 py-3 border border-white text-white font-bold uppercase tracking-widest hover:bg-white hover:text-black transition-all">GitHub</a>
-            <a href="mailto:ramanagangarao04@gmail.com" class="px-8 py-3 border border-white text-white font-bold uppercase tracking-widest hover:bg-white hover:text-black transition-all">Email Me</a>
+            <a href="https://www.linkedin.com/in/ramana-gangarao/"
+                class="px-8 py-3 border border-[#00f2ff] text-[#00f2ff] font-bold uppercase tracking-widest hover:bg-[#00f2ff] hover:text-black transition-all">LinkedIn</a>
+            <a href="https://github.com/RamanaGR"
+                class="px-8 py-3 border border-white text-white font-bold uppercase tracking-widest hover:bg-white hover:text-black transition-all">GitHub</a>
+            <a href="mailto:ramanagangarao04@gmail.com"
+                class="px-8 py-3 border border-white text-white font-bold uppercase tracking-widest hover:bg-white hover:text-black transition-all">Email
+                Me</a>
+        </div>
+    </section>
+
+    <section class="max-w-6xl mx-auto py-12 px-6">
+        <div class="nexus-card p-8 rounded-2xl border border-[#00f2ff]/30 relative overflow-hidden" data-aos="fade-up">
+            <div class="absolute top-8 right-8 flex items-center gap-2">
+                <span class="relative flex h-3 w-3">
+                    <span
+                        class="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#00f2ff] opacity-75"></span>
+                    <span class="relative inline-flex rounded-full h-3 w-3 bg-[#00f2ff]"></span>
+                </span>
+                <span class="text-[10px] text-[#00f2ff] font-mono tracking-widest uppercase hidden md:inline-block">Live
+                    Agent Feed</span>
+            </div>
+
+            <h3 class="text-xl font-bold mb-4 flex items-center gap-3 text-white">
+                <span class="text-gray-500 font-mono text-sm">~/daily-ai-insight</span>
+            </h3>
+
+            <div id="agentic-feed" class="text-gray-400 text-sm font-mono leading-relaxed space-y-3 min-h-[80px]">
+                <span class="animate-pulse">Initializing secure connection to OpenClaw daemon...</span>
+            </div>
         </div>
     </section>
 
@@ -70,7 +138,10 @@
                         <span class="skill-tag">GRAPH-RAG</span>
                     </div>
                     <p class="text-gray-400 text-sm mb-6 leading-relaxed">
-                        Redefining document understanding through a specialized <span class="text-white">MCP server</span> built atop <span class="text-white">Neo4j</span>. This architecture enables agents to traverse complex contractual ontologies and perform multi-step semantic reasoning over unstructured entities.
+                        Redefining document understanding through a specialized <span class="text-white">MCP
+                            server</span> built atop <span class="text-white">Neo4j</span>. This architecture enables
+                        agents to traverse complex contractual ontologies and perform multi-step semantic reasoning over
+                        unstructured entities.
                     </p>
                     <div class="space-y-2 mb-6">
                         <div class="flex items-center gap-2 text-xs text-gray-500">
@@ -81,17 +152,23 @@
                         </div>
                     </div>
                 </div>
-                <a href="https://github.com/RamanaGR/knowledge-graph-rag" class="text-[#00f2ff] text-xs font-bold uppercase tracking-widest hover:underline">Explore Logic ↗</a>
+                <a href="https://github.com/RamanaGR/knowledge-graph-rag"
+                    class="text-[#00f2ff] text-xs font-bold uppercase tracking-widest hover:underline">Explore Logic
+                    ↗</a>
             </div>
 
-            <div class="nexus-card p-8 rounded-2xl flex flex-col justify-between h-full" data-aos="zoom-in-up" data-aos-delay="100">
+            <div class="nexus-card p-8 rounded-2xl flex flex-col justify-between h-full" data-aos="zoom-in-up"
+                data-aos-delay="100">
                 <div>
                     <div class="flex justify-between items-start mb-6">
                         <h3 class="text-2xl font-bold text-white">TalentScreen Orchestrator</h3>
                         <span class="skill-tag">LANGGRAPH</span>
                     </div>
                     <p class="text-gray-400 text-sm mb-6 leading-relaxed">
-                        A production-grade multi-agent platform utilizing <span class="text-white">stateful LangGraph workflows</span>. Features specialized agents for candidate matching and semantic query optimization, backed by <span class="text-white">Redis vector caching</span> for high-frequency retrieval.
+                        A production-grade multi-agent platform utilizing <span class="text-white">stateful LangGraph
+                            workflows</span>. Features specialized agents for candidate matching and semantic query
+                        optimization, backed by <span class="text-white">Redis vector caching</span> for high-frequency
+                        retrieval.
                     </p>
                     <div class="space-y-2 mb-6">
                         <div class="flex items-center gap-2 text-xs text-gray-500">
@@ -102,7 +179,9 @@
                         </div>
                     </div>
                 </div>
-                <a href="https://github.com/RamanaGR/langgraph-agent-engineering" class="text-[#bc13fe] text-xs font-bold uppercase tracking-widest hover:underline">View Orchestration ↗</a>
+                <a href="https://github.com/RamanaGR/langgraph-agent-engineering"
+                    class="text-[#bc13fe] text-xs font-bold uppercase tracking-widest hover:underline">View
+                    Orchestration ↗</a>
             </div>
         </div>
     </section>
@@ -115,34 +194,44 @@
         <div class="space-y-12">
             <div class="nexus-card p-10 rounded-2xl border-l-4 border-l-[#E87722]" data-aos="fade-up">
                 <div class="flex flex-col md:flex-row justify-between mb-6">
-                    <h3 class="text-3xl font-bold uppercase">Optum <span class="text-gray-500 text-xl font-light">| AI Engineer</span></h3>
+                    <h3 class="text-3xl font-bold uppercase">Optum <span class="text-gray-500 text-xl font-light">| AI
+                            Engineer</span></h3>
                     <p class="text-[#E87722] font-mono text-sm">2025 — PRESENT</p>
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                     <ul class="text-gray-400 space-y-3 text-sm list-none">
-                        <li class="flex gap-2"><span class="text-[#E87722]">▹</span> Integrated Google Document AI for granular entity and clause extraction.</li>
-                        <li class="flex gap-2"><span class="text-[#E87722]">▹</span> Developed ReAct loops for autonomous Knowledge Graph traversal.</li>
+                        <li class="flex gap-2"><span class="text-[#E87722]">▹</span> Integrated Google Document AI for
+                            granular entity and clause extraction.</li>
+                        <li class="flex gap-2"><span class="text-[#E87722]">▹</span> Developed ReAct loops for
+                            autonomous Knowledge Graph traversal.</li>
                     </ul>
                     <ul class="text-gray-400 space-y-3 text-sm list-none">
-                        <li class="flex gap-2"><span class="text-[#E87722]">▹</span> Established evaluation pipelines with DeepEval for retriever reliability.</li>
-                        <li class="flex gap-2"><span class="text-[#E87722]">▹</span> Engineered memory management patterns using Google ADK.</li>
+                        <li class="flex gap-2"><span class="text-[#E87722]">▹</span> Established evaluation pipelines
+                            with DeepEval for retriever reliability.</li>
+                        <li class="flex gap-2"><span class="text-[#E87722]">▹</span> Engineered memory management
+                            patterns using Google ADK.</li>
                     </ul>
                 </div>
             </div>
 
             <div class="nexus-card p-10 rounded-2xl border-l-4 border-l-[#0078D4]" data-aos="fade-up">
                 <div class="flex flex-col md:flex-row justify-between mb-6">
-                    <h3 class="text-3xl font-bold uppercase">Innovapath <span class="text-gray-500 text-xl font-light">| AI Engineer</span></h3>
+                    <h3 class="text-3xl font-bold uppercase">Innovapath <span class="text-gray-500 text-xl font-light">|
+                            AI Engineer</span></h3>
                     <p class="text-[#0078D4] font-mono text-sm">2025</p>
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                     <ul class="text-gray-400 space-y-3 text-sm list-none">
-                        <li class="flex gap-2"><span class="text-[#0078D4]">▹</span> Built custom MCP servers to support tool-calling agent actions.</li>
-                        <li class="flex gap-2"><span class="text-[#0078D4]">▹</span> Implemented semantic chunking in Docling for context preservation.</li>
+                        <li class="flex gap-2"><span class="text-[#0078D4]">▹</span> Built custom MCP servers to support
+                            tool-calling agent actions.</li>
+                        <li class="flex gap-2"><span class="text-[#0078D4]">▹</span> Implemented semantic chunking in
+                            Docling for context preservation.</li>
                     </ul>
                     <ul class="text-gray-400 space-y-3 text-sm list-none">
-                        <li class="flex gap-2"><span class="text-[#0078D4]">▹</span> Configured HNSW indexing for low-latency Milvus vector search.</li>
-                        <li class="flex gap-2"><span class="text-[#0078D4]">▹</span> Engineered PII redaction guardrails with Presidio and AWS.</li>
+                        <li class="flex gap-2"><span class="text-[#0078D4]">▹</span> Configured HNSW indexing for
+                            low-latency Milvus vector search.</li>
+                        <li class="flex gap-2"><span class="text-[#0078D4]">▹</span> Engineered PII redaction guardrails
+                            with Presidio and AWS.</li>
                     </ul>
                 </div>
             </div>
@@ -170,10 +259,11 @@
     </section>
 
     <footer class="text-center py-20 border-t border-white/5 opacity-40 text-[10px] tracking-[0.4em] uppercase">
-        GANGARAO RAMANA // AI ARCHITECT // 2026
+        GANGARAO RAMANA // AI ENGINEER // 2026
     </footer>
 
     <script>
+        // Canvas Animation Logic
         const canvas = document.getElementById('neural-canvas');
         const ctx = canvas.getContext('2d');
         let particles = [];
@@ -197,18 +287,60 @@
                 for (let j = i + 1; j < particles.length; j++) {
                     const p2 = particles[j]; const dist = Math.hypot(p.x - p2.x, p.y - p2.y);
                     if (dist < 170) {
-                        ctx.lineWidth = 1 - dist/170; ctx.beginPath(); ctx.moveTo(p.x, p.y); ctx.lineTo(p2.x, p2.y); ctx.stroke();
+                        ctx.lineWidth = 1 - dist / 170; ctx.beginPath(); ctx.moveTo(p.x, p.y); ctx.lineTo(p2.x, p2.y); ctx.stroke();
                     }
                 }
             });
             requestAnimationFrame(draw);
         }
         window.addEventListener('resize', init); init(); draw();
+
+        // Libraries Init
         AOS.init({ duration: 1000, once: true });
         new Typewriter('#typewriter', {
             strings: ['AI SOLUTIONS ARCHITECT', 'AGENTIC AI ENGINEER', 'KNOWLEDGE GRAPH SPECIALIST', 'MLOPS LEAD'],
             autoStart: true, loop: true,
         });
+
+        // --- AUTONOMOUS AGENT FEED LOGIC ---
+        async function fetchTodayAgentUpdate() {
+            const feedContainerEl = document.getElementById('agentic-feed');
+
+            // Get today's date in YYYY-MM-DD format based on local time
+            const today = new Date();
+            const localDate = new Date(today.getTime() - (today.getTimezoneOffset() * 60000))
+                .toISOString().split('T')[0];
+
+            // Raw GitHub URL targeting your feature_dev branch
+            const rawUrl = `https://raw.githubusercontent.com/RamanaGR/RamanaGR.github.io/feature_dev/updates/${localDate}.md?t=${Date.now()}`;
+
+            try {
+                const response = await fetch(rawUrl);
+
+                if (!response.ok) {
+                    feedContainerEl.innerHTML = `<span class="text-gray-500 italic">No autonomous sweep executed yet for ${localDate}. The local OpenClaw daemon is scheduled to run later today.</span>`;
+                    return;
+                }
+
+                let markdown = await response.text();
+
+                // Raw Logic Markdown to HTML Parser
+                let html = markdown
+                    .replace(/^### (.*$)/gim, '<h4 class="text-[#00f2ff] font-bold text-lg mt-2 mb-2">$1</h4>') // H3 Headers
+                    .replace(/\*\*(.*?)\*\*/gim, '<strong class="text-white">$1</strong>') // Bold text
+                    .replace(/\n/gim, '<br>'); // Line breaks
+
+                feedContainerEl.innerHTML = html;
+
+            } catch (error) {
+                console.error("Agent feed error:", error);
+                feedContainerEl.innerHTML = `<span class="text-red-500 font-mono">ERR: Failed to connect to telemetry. Check CORS or network status.</span>`;
+            }
+        }
+
+        // Initialize the fetch when the page loads
+        fetchTodayAgentUpdate();
     </script>
 </body>
+
 </html>
