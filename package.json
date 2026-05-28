@@ -1,0 +1,25 @@
+{
+  "name": "ramanagr.github.io",
+  "version": "1.0.0",
+  "description": "Personal website for **Ramana Gangarao**.",
+  "main": "index.js",
+  "scripts": {
+    "build:css": "tailwindcss -i ./src/input.css -o ./css/style.css --minify",
+    "watch:css": "tailwindcss -i ./src/input.css -o ./css/style.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RamanaGR/RamanaGR.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/RamanaGR/RamanaGR.github.io/issues"
+  },
+  "homepage": "https://github.com/RamanaGR/RamanaGR.github.io#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.4.19"
+  }
+}
